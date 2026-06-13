@@ -1,0 +1,90 @@
+Step-by-Step Git Commands
+1. Initialize a new Git project
+bash
+git init
+2. Check the status of the Git project
+bash
+git status
+You will see multiple files listed as "Untracked".
+
+3. Add each file to the Git staging area
+bash
+git add disclaimer.txt
+git add assembly.txt
+git add troubleshooting.txt
+Or add all files at once:
+
+bash
+git add .
+4. Check the status of the Git project again
+bash
+git status
+All files should now show as green under "Changes to be committed".
+
+5. Make a commit
+bash
+git commit -m "Initial commit: add product disclaimer, assembly instructions, and troubleshooting guide"
+6. View your Git commit log
+bash
+git log
+Press q to exit.
+
+7. Include this line in disclaimer.txt
+Open disclaimer.txt in a text editor and add this line at the end:
+
+text
+Warning: For best battery life, do not leave robot battery charging overnight.
+Save the file.
+
+8. Add the file to the staging area
+bash
+git add disclaimer.txt
+9. Make a commit
+bash
+git commit -m "Add battery life warning to disclaimer"
+10. View your Git commit log again
+bash
+git log
+You should see 2 commits (initial + disclaimer update). Press q to exit.
+
+11. Revise each file and make another commit
+Make any changes you want to disclaimer.txt, assembly.txt, and troubleshooting.txt.
+
+For example, you could add to assembly.txt:
+
+text
+Step 1: Attach the left arm to the torso using the 4 small screws.
+Step 2: Connect the power module to the central processor.
+Then stage and commit:
+
+bash
+git add .
+git commit -m "Revise assembly instructions and update all files"
+Final Verification
+View your complete commit history:
+
+bash
+git log --oneline
+You should see 3 commits:
+
+text
+abc1234 Revise assembly instructions and update all files
+def5678 Add battery life warning to disclaimer
+ghi9012 Initial commit: add product disclaimer, assembly instructions, and troubleshooting guide
+📋 Summary of Git Commands Used
+Command	Purpose
+git init	Create a new Git repository
+git status	See what's changed/staged
+git add <file>	Stage a specific file
+git add .	Stage all changed files
+git commit -m "message"	Save a snapshot with a message
+git log	View full commit history
+git log --oneline	View compact commit history
+💡 Pro Tips
+Always check git status before committing to see what will be included
+
+Write clear, descriptive commit messages
+
+Use git add . carefully — it stages all changes in the current directory
+
+Press q to exit git log or any other terminal pager

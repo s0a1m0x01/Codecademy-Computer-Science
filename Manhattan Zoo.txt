@@ -1,0 +1,78 @@
+Step-by-Step Git Commands
+1. Initialize a new Git repository
+bash
+git init
+2. Check the status of the repository
+bash
+git status
+3. Add meal-regimens.txt to the staging area
+bash
+git add meal-regimens.txt
+4. Make a commit
+bash
+git commit -m "Add initial meal regimens"
+5. Include new info in meal-regimens.txt
+Open meal-regimens.txt in a text editor (like nano, vim, or VS Code) and add:
+
+text
+3. Long-Tailed Chinchillas
+Meal: 1 bag animal pellets, 1 bag dried fruit, 1/2 bag cashews, 5 carrots, 3 stalks kale
+Times: 8:00 am
+Directions: disperse contents throughout Chinchilla habitat
+Save the file.
+
+6. Add meal-regimens.txt to the staging area
+bash
+git add meal-regimens.txt
+7. Check the status of the Git project
+bash
+git status
+You should see meal-regimens.txt listed as "modified".
+
+8. Make a commit
+bash
+git commit -m "Add chinchilla meal regimen"
+9. View your Git commit history
+bash
+git log
+Press q to exit the log view.
+
+10. Add two more animal reports
+Open meal-regimens.txt again and append:
+
+text
+4. Poison Dart Frogs
+Meal: 1 bag small crickets
+Times: 6:00 am
+Directions: empty bag in frog habitat once daily. Do not touch frogs! Extremely poisonous.
+
+5. Western Lowland Gorilla
+Meal: (Morning) 20 lbs. kale, 10 lbs. celery, 10 lbs. green beans, 5 lbs. carrots, 1 bag sweet potatoes. (Evening) 10 Bananas, 10 apples, 5 oranges, 5 mango, 20 lbs. grapes, 10 lbs. turnips, 5 lbs. white potatoes
+Times: 6:30 am, 12:00 pm, 7:00 pm
+Directions: feed Gorillas in the morning as group, spread forage items during noon meal, and divide quantities for individual feeding in evening
+Save the file.
+
+Then stage and commit each one separately:
+
+bash
+git add meal-regimens.txt
+git commit -m "Add poison dart frog meal regimen"
+bash
+# For the gorilla, you can edit the file again, then:
+git add meal-regimens.txt
+git commit -m "Add gorilla meal regimen"
+Final Verification
+After all commits, run:
+
+bash
+git log --oneline
+You should see 4 commits total (initial + chinchilla + frogs + gorilla).
+
+📋 Summary of Git Commands Used
+Command	Purpose
+git init	Create a new Git repository
+git status	See what's changed/staged
+git add <file>	Stage a file for commit
+git commit -m "message"	Save a snapshot with a message
+git log	View commit history
+git log --oneline	View compact commit history

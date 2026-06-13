@@ -1,0 +1,80 @@
+Step-by-Step Terminal Commands
+
+Getting Oriented
+bash
+pwd
+ls
+
+Navigating & Exploring
+bash
+cd freight
+ls
+cd porteur
+cd ../..
+ls
+
+Creating Files in Downhill
+bash
+cd mountain/downhill
+touch dirt.txt
+touch mud.txt
+ls
+
+Creating Directories
+bash
+mkdir safety
+cd ../..
+ls
+
+Expanding the Project
+bash
+mkdir bmx
+touch bmx/tricks.txt
+ls
+
+Final Verification (Optional)
+After completing all tasks, you can run:
+
+bash
+tree bicycle-world-ii
+
+Or, if tree is not available:
+
+bash
+ls -R bicycle-world-ii
+This will show the full directory structure to confirm all files and folders were created correctly.
+
+Expected Final Directory Structure
+text
+bicycle-world-ii/
+|—— brands.txt
+|—— freight/
+|   |—— messenger/
+|   |—— porteur/
+|—— mountain/
+|   |—— downhill/
+|   |   |—— heavyweight/
+|   |   |—— lightweight/
+|   |   |—— dirt.txt        <-- new
+|   |   |—— mud.txt         <-- new
+|   |   |—— safety/         <-- new
+|   |—— hardtail/
+|—— racing/
+    |—— road/
+    |—— track/
+|—— bmx/                    <-- new
+    |—— tricks.txt          <-- new
+💡 Tips if you get stuck
+pwd shows where you are.
+
+ls shows what’s in the current directory.
+
+cd .. moves up one level.
+
+cd folder moves into a folder.
+
+mkdir folder creates a folder.
+
+touch file.txt creates an empty file.
+
+Use Tab to auto-complete folder/file names.
